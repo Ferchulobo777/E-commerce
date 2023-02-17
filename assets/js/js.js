@@ -15,6 +15,11 @@ let carProducts = [];
 carToggle.addEventListener("click", () => {
     carBlock.classList.toggle("nav__car__visible")
 })
+window.addEventListener("click", (event) => {
+    if (!event.target.closest("#car") && !event.target.closest(".car__toggle")) {
+      carBlock.classList.remove("nav__car__visible");
+    }
+  });
 
 //! Listeners
 eventListenersLoader()

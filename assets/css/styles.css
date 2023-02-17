@@ -5,6 +5,7 @@
 }
 body {
     font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
 }
 nav {
     display: flex;
@@ -26,7 +27,7 @@ nav button {
     height: 30px;
     background-color: rgba(255, 255, 255, 0);
     border: none;
-    filter: drop-shadow(.5px .5px .5px #000);
+    filter: drop-shadow(1px .5px .5px #eb4a5a);
 }
 nav button i {
     font-size: 24px;
@@ -36,7 +37,7 @@ nav button i {
     filter: drop-shadow(1px 1px 1px #eb4a5a);
 }
 nav button i:hover {
-    font-size: 28px;
+    font-size: 32px;
 }
 header {
     height: 350px;
@@ -63,11 +64,13 @@ header img {
     padding: 20px 0;
     height: 85%;
     overflow-y: scroll;
+    scroll-behavior: smooth;
     left: 100%;
-    transition: 0.5s;
+    transition: 0.7s;
     box-shadow: 5px 10px 20px 0px #4343433b;
     background-color: #000;
-    filter: drop-shadow(10px 10px 10px #fff);
+    border: 2px solid #eb4a5a;
+    filter: drop-shadow(15px 15px 15px #eb4a5a);
 }
 .car__toggle {
     display: block;
@@ -99,30 +102,40 @@ main h3 {
     box-shadow: 0px 10px 60px 2px #4343432a;
     z-index: 0;
     background-color: #eb4a5a;
-    filter: drop-shadow(1px 1px 1px #000);
+    filter: drop-shadow(2px 2px 2px #fff);
+    border-top: 20px solid #eb4a5a;
+    border-top-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-radius: 2rem;
+    
 }
 .product__container__img img {
     max-width: 290px;
+    border-radius: 2rem;
+    margin-left: .3rem;
+    margin-right: .3rem;
 }
 .product__container__name {
     margin-bottom: 20px;
-    filter: drop-shadow(.5px .5px .5px #000);
+    filter: drop-shadow(1px 1px 1px #000);
 }
 .product__container__name p {
     font-size: 23px;
     width: 200px;
     padding-left: 20px;
+    filter: drop-shadow(1px 1px 1px #fff);
 }
 .product__container__price {
     margin-bottom: 20px;
     display: flex;
     justify-content: flex-end;
-    filter: drop-shadow(.5px .5px .5px #000);
+    filter: drop-shadow(2px 2px 2px #fff);
 }
 .product__container__price p {
     font-size: 25px;
     font-weight: bold;
     padding-right: 20px;
+    
 }
 .product__container__button {
     padding-left: 20px;
@@ -134,19 +147,22 @@ main h3 {
     color: white;
     width: 100px;
     border-radius: 20px;
-    border: solid 1px white;
+    border: solid 2px #000;
     cursor: pointer;
     transition: 0.5s;
-    filter: drop-shadow(2px 2px 2px #eb4a5a);
+    filter: drop-shadow(2px 2px 2px #000);
 }
 .car__button:hover {
     transform: translateY(-3px);
+    background-color: #000;
+    color: #fff;
+    border: solid 2px #fff;
+    filter: drop-shadow(2px 2px 2px #fff);
 }
-
 .car__block .empty__button {
     width: 150px;
-    background-color: #eb4a5a;
-    color: white;
+    background-color: #fff;
+    color: #000;
     cursor: pointer;
     transition: 0.5s;
     margin-top: 30px;
@@ -155,7 +171,10 @@ main h3 {
     filter: drop-shadow(2px 2px 2px #eb4a5a);
 }
 .car__block .empty__button:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    background-color: #eb4a5a;
+    color: #fff;
+    filter: drop-shadow(2px 2px 2px #eb4a5a);
 }
 .car__product {
     display: flex;
@@ -163,41 +182,46 @@ main h3 {
 }
 .car__product__image {
     margin-right: 20px;
+    filter: drop-shadow(6px 6px 6px #eb4a5a);
 }
 .car__product__image img {
     width: 100px;
     height: 100px;
+    border-radius: 1rem;
+    filter: drop-shadow(2px 2px 2px #fff);
 }
 .car__product__description {
     margin-right: 20px;
     color: #eb4a5a;
-    filter: drop-shadow(1px 1px 1px #eb4a5a);
+    filter: drop-shadow(.5px .5px .5px #fff);
 }
 .car__product__button {
     display: flex;
     justify-content: flex-end;
-    
 }
 .car__product__button button {
     width: 80px;
     cursor: pointer;
-    background-color: #eb4a5a;
-    color: white;
+    background-color: #fff;
+    color: #000;
     border-radius: 20px;
     transition: 0.5s;
     filter: drop-shadow(2px 2px 2px #eb4a5a);
 }
 .car__product__button button:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    background-color: #eb4a5a;
+    color: #fff;
+    filter: drop-shadow(2px 2px 2px #eb4a5a);
 }
 
 #car__list hr {
     border: none;
-    height: 1.4px;
-    background-color: #eb4a5a;
+    height: 2px;
+    background-color: #fff;
     width: 80%;
     margin-left: 40px;
-    filter: drop-shadow(2px 2px 2px #eb4a5a);
+    filter: drop-shadow(4px 4px 4px #eb4a5a);
 }
 
 /* Footer */
@@ -234,7 +258,7 @@ footer h3 {
         transition: 0.7s;
         box-shadow: 5px 10px 20px 0px #4343433b;
         background-color: #000;
-        filter: drop-shadow(25px 25px 25px #eb4a5a);
+        filter: drop-shadow(15px 15px 15px #eb4a5a);
     }
     .nav__car__visible {
         left: 70%;
