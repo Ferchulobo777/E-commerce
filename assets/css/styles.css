@@ -228,13 +228,13 @@ footer h3 {
         top: 65px;
         width: 350px;
         padding: 20px 0;
-        height: 85%;
+        height: 50%;
         overflow-y: scroll;
         left: 180%;
         transition: 0.7s;
         box-shadow: 5px 10px 20px 0px #4343433b;
         background-color: #000;
-        filter: drop-shadow(10px 10px 10px #fff);
+        filter: drop-shadow(25px 25px 25px #eb4a5a);
     }
     .nav__car__visible {
         left: 70%;
