@@ -215,3 +215,28 @@ footer h3 {
     font-weight: 400;
     filter: drop-shadow(.5px .5px .5px #000);
 }
+
+/**********RESPONSIVE****************************/
+@media screen and (max-width:400px){
+    .car__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: -200px;
+        background-color: white;
+        position: fixed;
+        top: 65px;
+        width: 350px;
+        padding: 20px 0;
+        height: 85%;
+        overflow-y: scroll;
+        left: 180%;
+        transition: 0.7s;
+        box-shadow: 5px 10px 20px 0px #4343433b;
+        background-color: #000;
+        filter: drop-shadow(10px 10px 10px #fff);
+    }
+    .nav__car__visible {
+        left: 70%;
+    }
+}
